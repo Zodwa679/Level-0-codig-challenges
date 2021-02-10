@@ -10,10 +10,10 @@ function  convertNumberTime(number){
     let hourText = hours + ' ' + hourPluralCheck;
 
     if(hours == 0) {
-         return muniteText; 
+         console.log(muniteText); 
     }
     else {
-        return minutes > 0 ? hourText + muniteText : hourText; 
+        console.log(minutes > 0 ? hourText + muniteText : hourText); 
     }
 }
     
