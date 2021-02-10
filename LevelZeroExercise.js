@@ -22,24 +22,25 @@ console.log(b);
 
 // Task 0.3
 function hello(string){
-    return 'Hello' + ' ' + string + '!'
+    console.log('Hello' + ' ' + string + '!');
+
 }
-console.log(hello('Tshepo'));
+hello('Tshepo');
 
 // Task 0.4
 function evenOrOdd(number){
     if(number % 2 == 0){
-        return 'even'
+        console.log('even')
     } else {
-        return 'odd'
+        console.log('odd');
     }
 }
-console.log(evenOrOdd(67));
+evenOrOdd(3);
 
 // Task 0.5
 function findTriangleArea(num1,num2,num3) {
 var perimeter = (num1 + num2 + num3)/2;
-var area = Math.sqrt(perimeter*((perimeter-num1)*(perimeter-num2)*(perimeter-num3)));
+var area = Math.sqrt(perimeter*((perimeter-num1)*(perimeter-num2)*(perimeter-num3))); //formula of a triangle wiht 3 knonwn sides.
 return area;
 }
 
@@ -84,43 +85,45 @@ function  convertNumberTime(number){
     }
 }
     
-console.log(convertNumberTime(120));
+console.log(convertNumberTime(133));
 
 // Task 0.9
-function printVowels(word) {
+function printVowels(string) {
     let vowels = ['a', 'e', 'i', 'o', 'u']; 
     let vowelsToPrint = "";
 
-    for(i = 0; i < word.length; i++) {
-        if(vowels.includes(word[i].toLowerCase())) {
-            vowelsToPrint += word[i];
+    for(var i = 0; i < string.length; i++) {
+        if(vowels.includes(string[i].toLowerCase())) {
+            vowelsToPrint += string[i];
         } 
     }
 
-    return vowelsToPrint;
+    console.log(vowelsToPrint);
 } 
 
-console.log(printVowels("Zoe"));
+printVowels("Zoe");
 
 
 // Task 0.10
-function printCommonLetter(firstWord, secondWord) {
+function printCommonLetter(firstString, secondString) {
 
-    let firstWordLower = firstWord.toLowerCase();
-    let secondWordLower = secondWord.toLowerCase();
+    let firstStringLower = firstString.toLowerCase();
+    let secondStringLower = secondString.toLowerCase();
 
-    let firstWordletters = Array.from(firstWordLower); 
+    let firstStringletters = Array.from(firstStringLower); 
     let commonLetters = "";
 
-    for(i = 0; i < secondWordLower.length; i++) {
-        if(firstWordletters.includes(secondWordLower[i])) {
-            commonLetters += secondWordLower[i];
+    
+
+    for(i = 0; i < secondStringLower.length; i++) {
+        if(firstStringletters.includes(secondStringLower[i])) {
+            commonLetters += secondStringLower[i]
         } 
     }
 
-    return commonLetters;
+    console.log(commonLetters);
 } 
 
-console.log(printCommonLetter("Prinzt", "prinkz"));
+printCommonLetter("house", "computers");
 
 
