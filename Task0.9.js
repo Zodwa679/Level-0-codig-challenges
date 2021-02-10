@@ -11,4 +11,4 @@ function printVowels(string) {
     console.log(vowelsToPrint);
 } 
 
-printVowels("Zoe");
+printVowels("Umuzi");

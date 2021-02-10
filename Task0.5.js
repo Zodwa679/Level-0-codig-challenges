@@ -6,9 +6,4 @@ function findTriangleArea(num1,num2,num3) {
     
     console.log(findTriangleArea(13,20,31)); 
     
-    // Task 0.6
-    function numbers() {
-        for (var i = 0; i < arguments.length; i++) {
-          console.log(arguments[i]);
-        }
-      }
+    

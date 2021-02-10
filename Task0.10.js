@@ -14,5 +14,6 @@ function printCommonLetter(firstString, secondString) {
         } 
     }
 
-    console.log(commonLetters);
+    return commonLetters;
 } 
+printCommonLetter('house','computers');
