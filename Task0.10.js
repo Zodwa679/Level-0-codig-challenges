@@ -10,10 +10,12 @@ function printCommonLetter(firstString, secondString) {
 
     for(i = 0; i < secondStringLower.length; i++) {
         if(firstStringletters.includes(secondStringLower[i])) {
-            commonLetters += secondStringLower[i]
+            if(!commonLetters.includes(secondStringLower[i])) {
+                commonLetters += secondStringLower[i];
+            }
         } 
     }
 
     return commonLetters;
 } 
-printCommonLetter('house','computers');
+console.log(printCommonLetter('house','computers'));
