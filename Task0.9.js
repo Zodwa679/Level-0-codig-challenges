@@ -13,4 +13,4 @@ function printVowels(string) {
     console.log(vowelsToPrint);
 } 
 
-printVowels("Umuzii");
+printVowels("umuZiI");

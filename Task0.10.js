@@ -4,7 +4,7 @@ function printCommonLetter(firstString, secondString) {
     let secondStringLower = secondString.toLowerCase();
 
     let firstStringletters = Array.from(firstStringLower); 
-    let commonLetters = "";
+    let commonLetters = '';
 
     
 
