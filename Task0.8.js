@@ -17,4 +17,4 @@ function  convertNumberTime(number){
     }
 }
     
-console.log(convertNumberTime(133));
+convertNumberTime(133));
