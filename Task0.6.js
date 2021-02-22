@@ -10,4 +10,4 @@ function maximumNumber() {
   console.log(maximumNumber);
 }
 
-maximumNumber(1,2,9,4,5,50,7);
+maximumNumber(1,4,9,4,5,70,7);
