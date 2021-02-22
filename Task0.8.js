@@ -16,4 +16,4 @@ function  convertNumberTime(number){
     }
 }
     
-(convertNumberTime(60));
+(convertNumberTime(120));
