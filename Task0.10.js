@@ -5,6 +5,7 @@ function printCommonLetter(firstString, secondString) {
 
     let firstStringletters = Array.from(firstStringLower); 
     let commonLetters = '';
+    
 
     
 
@@ -15,7 +16,7 @@ function printCommonLetter(firstString, secondString) {
             }
         } 
     }
-
-    return commonLetters;
+    
+    return commonLetters.split("").join(',');
 } 
 console.log(printCommonLetter('house','computers'));
