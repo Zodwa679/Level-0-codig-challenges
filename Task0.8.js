@@ -3,17 +3,18 @@ function  convertNumberTime(number){
     let minutes = number % 60;
     let hours = (number - minutes )/60 ;
 
+    let minutepluralCheck = minutes == 1 ? "munite" : "munites"; 
     let hourPluralCheck = hours == 1 ? "hour " : "hours ";
 
-    let minuteText = minutes + ' ' + 'minutes';
+    let muniteText = minutes + ' ' + minutepluralCheck;
     let hourText = hours + ' ' + hourPluralCheck;
 
     if(hours == 0) {
-         console.log(hourText + minuteText); 
+         return hourText + muniteText; 
     }
     else {
-        console.log( minutes >= 0 ? hourText + minuteText: hours);
+        return minutes >= 0 ? hourText + muniteText : hourText; 
     }
 }
     
-(convertNumberTime(60));
+console.log(convertNumberTime(60));
