@@ -4,13 +4,11 @@ function printVowels(string) {
 
     for(var i = 0; i < string.length; i++) {
         if(vowels.includes(string[i].toLowerCase())) {
-            if(!vowelsToPrint.includes(string[i].toLowerCase())){
         
             vowelsToPrint += string[i];
-        } 
     }
     }
     console.log(vowelsToPrint);
 } 
 
-printVowels("umuZiI");
+printVowels("Umuzii")
