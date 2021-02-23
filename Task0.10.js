@@ -1,3 +1,4 @@
+
 function printCommonLetter(firstString, secondString) {
 
     let firstStringLower = firstString.toLowerCase();
@@ -17,6 +18,6 @@ function printCommonLetter(firstString, secondString) {
         } 
     }
     
-    return commonLetters.split("").join(',');
+    return 'Common Letters' + ':' + ' ' + commonLetters.split("").join(',');
 } 
 console.log(printCommonLetter('house','computers'));
