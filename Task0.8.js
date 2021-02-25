@@ -6,7 +6,7 @@ function  convertNumberTime(number){
     let minutepluralCheck = minutes == 1 ? "minute" : "minutes"; 
     let hourPluralCheck = hours == 1 ? "hour " : "hours ";
 
-    let muniteText = minutes + ' ' + minutepluralCheck;
+    let minuteText = minutes + ' ' + minutepluralCheck;
     let hourText = hours + ' ' + hourPluralCheck;
 
     if(hours == 0) {
